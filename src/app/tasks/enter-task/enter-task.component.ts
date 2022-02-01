@@ -16,6 +16,7 @@ export class EnterTaskComponent implements OnInit, OnChanges {
   @Output() outUpdateTask = new EventEmitter<Task>();
 
   inputForm!: FormGroup;
+  isUpdateMode: boolean = false;
 
   constructor(private taskService: TaskService, private fb: FormBuilder) {}
 
@@ -28,6 +29,7 @@ export class EnterTaskComponent implements OnInit, OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
       console.log(changes);
       if (changes?.updateTask?.currentValue) {
+        this.isUpdateMode = true;
         this.inputForm.patchValue({
           title: changes?.updateTask?.currentValue?.title
         })
@@ -49,6 +51,7 @@ export class EnterTaskComponent implements OnInit, OnChanges {
     }
     this.outUpdateTask.emit(updatedTask);
     this.inputForm.reset();
+    this.isUpdateMode = false;
   }
 
 }
