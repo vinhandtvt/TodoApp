@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.18.
 
-## Development server
+## How to run this app
 After download or clone the repo. navigate to the folder by `cd TodoApp`. Run `npm install` to install the node module.
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
