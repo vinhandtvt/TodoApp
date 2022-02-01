@@ -1,0 +1,13 @@
+
+<div class="row">
+  <div class="col-8 task-content">
+    <span [ngClass]="{'done': task.done}">{{task.title}}</span>
+  </div>
+  <div class="col-4 task-acitons">
+    <button [disabled]="task.done" (click)="updateTask()" class="btn btn-primary px-2">Update</button>
+    <button [disabled]="task.done" (click)="deleteTask()" class="btn btn-danger">Delete</button>
+    <button [disabled]="task.done" (click)="doneTask()" class="btn btn-success">Done</button>
+  </div>
+
+</div>
+

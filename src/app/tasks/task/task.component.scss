@@ -1,0 +1,10 @@
+.task-content {
+  align-self: center;
+  .done {
+    text-decoration: line-through;
+  }
+}
+.task-acitons {
+  display: flex;
+  justify-content: right;
+}

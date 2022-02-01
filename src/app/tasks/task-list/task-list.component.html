@@ -1,0 +1,8 @@
+
+<section class="tasks-container">
+  <app-enter-task (outEnterTask)="addTask($event)" [updateTask]="selectedTask" (outUpdateTask)="updateTask($event)" class="enter-task"></app-enter-task>
+  <br>
+  <hr>
+  <app-task *ngFor="let task of tasks" [task]="task" (outUpdateTask)="chooseUpdateTask($event)" (outDeleteTask)="deleteTask($event)" (outDoneTask)="doneTask($event)" class="task"></app-task>
+</section>
+

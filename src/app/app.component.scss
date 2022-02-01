@@ -1,0 +1,11 @@
+.todo-container {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #edcdbb;
+  .todo__title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}

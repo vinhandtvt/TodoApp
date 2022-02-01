@@ -1,0 +1,16 @@
+.tasks-container {
+  width: 80%;
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .enter-task {
+    width: 100%;
+  }
+  .task {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 10px;
+  }
+}
